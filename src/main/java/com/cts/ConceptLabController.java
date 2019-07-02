@@ -16,6 +16,7 @@ public class ConceptLabController {
 	
 	@RequestMapping("/designAndCode")
 	public ModelAndView designAndCode(){
+		System.out.println("test");
 		return new ModelAndView("designAndCodePage");
 	}
 	
