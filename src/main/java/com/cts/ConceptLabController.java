@@ -9,14 +9,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){
-		//System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+	public ModelAndView requirement(){		
 		return new ModelAndView("requirementPage");
 	}	
 	
 	@RequestMapping("/designAndCode")
-	public ModelAndView designAndCode(){
-		System.out.println("test");
+	public ModelAndView designAndCode(){		
 		return new ModelAndView("designAndCodePage");
 	}
 	
