@@ -9,7 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){		
+	public ModelAndView requirement(){	
+		
 		return new ModelAndView("requirementPage");
 	}	
 	
