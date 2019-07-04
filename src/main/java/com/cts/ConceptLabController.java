@@ -10,21 +10,19 @@ public class ConceptLabController {
 
 	@RequestMapping("/requirement")
 	public ModelAndView requirement(){	
-		int param = 1;
-		if (param == 1)
-		 System.out.println("foo");
-		else if (param == 2)
-		 System.out.println("foo");
-		else if (param == 1) 
-		{// Noncompliant
-		  System.out.println("foo");
+		String firstName = "firstName";   //String overrides equals
+		String lastName = "lastName";
+
+		if (firstName == lastName)
+		{
+			 System.out.println("foo");
 		}
 		return new ModelAndView("requirementPage");
 	}	
 	
 	@RequestMapping("/designAndCode")
 	public ModelAndView designAndCode(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)		
+		//System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)		
 		return new ModelAndView("designAndCodePage");
 	}
 	
