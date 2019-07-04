@@ -10,13 +10,7 @@ public class ConceptLabController {
 
 	@RequestMapping("/requirement")
 	public ModelAndView requirement(){	
-		String firstName = "firstName";   //String overrides equals
-		String lastName = "lastName";
-
-		if (firstName == lastName)
-		{
-			 System.out.println("foo");
-		}
+		
 		return new ModelAndView("requirementPage");
 	}	
 	
