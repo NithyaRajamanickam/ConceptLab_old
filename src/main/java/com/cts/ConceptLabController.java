@@ -21,7 +21,7 @@ public class ConceptLabController {
 		  System.out.println("foo");
 		}*/
 		
-		return new ModelAndView("requirementPage");
+		return new ModelAndView("requirementPage"); 
 	}	
 	
 	@RequestMapping("/designAndCode")
