@@ -32,7 +32,7 @@ public class ConceptLabController {
 	
 	@RequestMapping("/testing")
 	public ModelAndView testing(){
-		//System.out.println(String.format("The value of my integer is %d", "Hello World"));
+		System.out.println(String.format("The value of my integer is %d", "Hello World"));
 		return new ModelAndView("testingPage");
 	}
 	
