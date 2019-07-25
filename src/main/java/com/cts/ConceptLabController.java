@@ -13,35 +13,22 @@ public class ConceptLabController {
 		return new ModelAndView("requirementPage"); 
 	}	
 	
-	@RequestMapping("/designAndCode")
-	public ModelAndView designAndCode(){		
-		int param = 1;
-		if (param == 1)
-		 System.out.println("foo");
-		else if (param == 2)
-		 System.out.println("foo");
-		else if (param == 1) 
-		{// Noncompliant
-		  System.out.println("foo");
-		}
+	@RequestMapping("/designAndCode")	
 		return new ModelAndView("designAndCodePage"); 
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){	
-		
+	public ModelAndView testing(){			
 		return new ModelAndView("testingPage");
 	}
 	
 	@RequestMapping("/endToEnd")
 	public ModelAndView endToEnd(){	
-		
 		return new ModelAndView("endtoEndPage");
 	}
 	
 	@RequestMapping("/projectManagement")
-	public ModelAndView projectManagement(){
-		
+	public ModelAndView projectManagement(){		
 		return new ModelAndView("projectManagementPage");
 	}
 	
