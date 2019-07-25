@@ -24,6 +24,8 @@ public class ConceptLabController {
 	
 	@RequestMapping("/endToEnd")
 	public ModelAndView endToEnd(){	
+		double d = 1.1;
+		BigDecimal bd1 = new BigDecimal(d); 
 		return new ModelAndView("endtoEndPage");
 	}
 	
