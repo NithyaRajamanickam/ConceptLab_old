@@ -9,36 +9,22 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){	
-		
-		/*int param = 1;
-		if (param == 1)
-		 System.out.println("foo");
-		else if (param == 2)
-		 System.out.println("foo");
-		else if (param == 1) 
-		{// Noncompliant
-		  System.out.println("foo");
-		}*/
-		
+	public ModelAndView requirement(){
 		return new ModelAndView("requirementPage"); 
 	}	
 	
 	@RequestMapping("/designAndCode")
-	public ModelAndView designAndCode(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)		
+	public ModelAndView designAndCode(){			
 		return new ModelAndView("designAndCodePage");
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){
-		//System.out.println(String.format("The value of my integer is %d", "Hello World"));
+	public ModelAndView testing(){		
 		return new ModelAndView("testingPage");
 	}
 	
 	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));
+	public ModelAndView endToEnd(){		
 		return new ModelAndView("endtoEndPage");
 	}
 	
