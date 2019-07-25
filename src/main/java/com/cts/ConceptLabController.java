@@ -9,7 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){		
+	public ModelAndView requirement(){	
+		int b = a > 12 ? 4 : 4;
 		return new ModelAndView("requirementPage"); 
 	}	
 	
