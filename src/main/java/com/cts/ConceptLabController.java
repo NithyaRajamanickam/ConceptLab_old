@@ -15,7 +15,7 @@ public class ConceptLabController {
 	
 	@RequestMapping("/designAndCode")
 	public ModelAndView designAndCode(){			
-		return new ModelAndView("designAndCodePage");
+		return new ModelAndView("designAndCodePage"); 
 	}
 	
 	@RequestMapping("/testing")
