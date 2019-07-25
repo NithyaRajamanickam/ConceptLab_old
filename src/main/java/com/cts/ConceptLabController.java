@@ -18,7 +18,12 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){			
+	public ModelAndView testing(){	
+		int target = -5;
+int num = 3;
+
+target =- num;  // Noncompliant; target = -3. Is that really what's meant?
+target =+ num; // Noncompliant; target = 3
 		return new ModelAndView("testingPage");
 	}
 	
