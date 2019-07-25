@@ -9,16 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){
-		int param = 1;
-		if (param == 1)
-		{
-		 System.out.println("foo");
-		}
-		else if (param == 2)
-		{
-		 System.out.println("fooyui");
-		}
+	public ModelAndView requirement(){		
 		return new ModelAndView("requirementPage"); 
 	}	
 	
@@ -27,19 +18,12 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){	
-		int target = -5;
-int num = 3;
-
-target =- num;  // Noncompliant; target = -3. Is that really what's meant?
-target =+ num; // Noncompliant; target = 3
+	public ModelAndView testing(){
 		return new ModelAndView("testingPage");
 	}
 	
 	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){	
-		double d = 1.1;
-		BigDecimal bd1 = new BigDecimal(d); 
+	public ModelAndView endToEnd(){
 		return new ModelAndView("endtoEndPage");
 	}
 	
