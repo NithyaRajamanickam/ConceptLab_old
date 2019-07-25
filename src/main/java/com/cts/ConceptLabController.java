@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){
+	public ModelAndView requirement(){		
 		return new ModelAndView("requirementPage"); 
 	}	
 	
@@ -24,12 +24,14 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){		
+	public ModelAndView endToEnd(){	
+		System.out.println(String.format("The value of my integer is %d", "Hello World"));
 		return new ModelAndView("endtoEndPage");
 	}
 	
 	@RequestMapping("/projectManagement")
 	public ModelAndView projectManagement(){
+		System.out.println(String.format("The value of my integer is %d", "Hello World"));
 		return new ModelAndView("projectManagementPage");
 	}
 	
