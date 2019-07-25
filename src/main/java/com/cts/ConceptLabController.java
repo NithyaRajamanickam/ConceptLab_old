@@ -14,24 +14,7 @@ public class ConceptLabController {
 	}	
 	
 	@RequestMapping("/designAndCode")
-	public ModelAndView designAndCode(){			
-		return new ModelAndView("designAndCodePage"); 
-	}
-	
-	@RequestMapping("/testing")
-	public ModelAndView testing(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));
-		return new ModelAndView("testingPage");
-	}
-	
-	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));
-		return new ModelAndView("endtoEndPage");
-	}
-	
-	@RequestMapping("/projectManagement")
-	public ModelAndView projectManagement(){
+	public ModelAndView designAndCode(){		
 		int param = 1;
 		if (param == 1)
 		 System.out.println("foo");
@@ -41,6 +24,24 @@ public class ConceptLabController {
 		{// Noncompliant
 		  System.out.println("foo");
 		}
+		return new ModelAndView("designAndCodePage"); 
+	}
+	
+	@RequestMapping("/testing")
+	public ModelAndView testing(){	
+		
+		return new ModelAndView("testingPage");
+	}
+	
+	@RequestMapping("/endToEnd")
+	public ModelAndView endToEnd(){	
+		
+		return new ModelAndView("endtoEndPage");
+	}
+	
+	@RequestMapping("/projectManagement")
+	public ModelAndView projectManagement(){
+		
 		return new ModelAndView("projectManagementPage");
 	}
 	
