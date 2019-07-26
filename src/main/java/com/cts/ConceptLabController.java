@@ -22,7 +22,10 @@ public class ConceptLabController {
 		return new ModelAndView("requirementPage"); 
 	}	
 	
-	@RequestMapping("/designAndCode")	
+	@RequestMapping("/designAndCode")
+	public ModelAndView designAndCodePage()
+	{
+		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
 		return new ModelAndView("designAndCodePage"); 
 	}
 	
