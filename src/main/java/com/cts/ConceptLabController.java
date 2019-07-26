@@ -9,23 +9,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){	
-		int param = 1;
-		if (param == 1)
-		 System.out.println("foo");
-		else if (param == 2)
-		 System.out.println("foo");
-		else if (param == 1) 
-		{// Noncompliant
-		  System.out.println("foo");
-		}
+	public ModelAndView requirement(){		
 		return new ModelAndView("requirementPage"); 
 	}	
 	
 	@RequestMapping("/designAndCode")
 	public ModelAndView designAndCodePage()
-	{
-		  
+	{	  
 		return new ModelAndView("designAndCodePage"); 
 	}
 	
@@ -40,8 +30,7 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/projectManagement")
-	public ModelAndView projectManagement(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+	public ModelAndView projectManagement(){			
 		return new ModelAndView("projectManagementPage");
 	}
 	
