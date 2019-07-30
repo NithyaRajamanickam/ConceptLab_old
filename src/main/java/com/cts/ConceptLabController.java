@@ -10,7 +10,7 @@ public class ConceptLabController {
 
 	@RequestMapping("/requirement")
 	public ModelAndView requirement(){	
-		
+		// test
 		return new ModelAndView("requirementPage"); 
 	}	
 	
