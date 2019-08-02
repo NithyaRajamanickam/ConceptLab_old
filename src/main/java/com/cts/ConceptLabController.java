@@ -9,7 +9,16 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){		
+	public ModelAndView requirement(){
+		int param = 1;
+		if (param == 1)
+		 System.out.println("foo");
+		else if (param == 2)
+		 System.out.println("foo");
+		else if (param == 1) 
+		{// Noncompliant
+		  System.out.println("foo");
+		}
 		return new ModelAndView("requirementPage"); 
 	}	
 	
