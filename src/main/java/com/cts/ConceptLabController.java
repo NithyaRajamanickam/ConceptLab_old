@@ -10,13 +10,6 @@ public class ConceptLabController {
 
 	@RequestMapping("/requirement")
 	public ModelAndView requirement(){
-		
-		return new ModelAndView("requirementPage"); 
-	}	
-	
-	@RequestMapping("/designAndCode")
-	public ModelAndView designAndCodePage()
-	{	  
 		int param = 1;
 		if (param == 1)
 		 System.out.println("foo");
@@ -25,7 +18,14 @@ public class ConceptLabController {
 		else if (param == 1) 
 		{// Noncompliant
 		  System.out.println("foo");
-		}		
+		}
+		return new ModelAndView("requirementPage"); 
+	}	
+	
+	@RequestMapping("/designAndCode")
+	public ModelAndView designAndCodePage()
+	{	  
+				
 		return new ModelAndView("designAndCodePage"); 
 	}
 	
