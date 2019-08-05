@@ -25,7 +25,8 @@ public class ConceptLabController {
 		else if (param == 1) 
 		{// Noncompliant
 		  System.out.println("foo");
-		}		
+		}	
+		
 		return new ModelAndView("designAndCodePage"); 
 	}
 	
