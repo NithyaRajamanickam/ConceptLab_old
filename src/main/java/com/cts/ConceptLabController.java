@@ -9,8 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ConceptLabController {
 
 	@RequestMapping("/requirement")
-	public ModelAndView requirement(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+	public ModelAndView requirement(){			
 		return new ModelAndView("requirementPage"); 
 	}	
 	
@@ -21,28 +20,17 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){
-		int param = 1;
-		if (param == 1)
-		 System.out.println("foo");
-		else if (param == 2)
-		 System.out.println("foo");
-		else if (param == 1) 
-		{// Noncompliant
-		  System.out.println("foo");
-		}
+	public ModelAndView testing(){		
 		return new ModelAndView("testingPage");
 	}
 	
 	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+	public ModelAndView endToEnd(){		
 		return new ModelAndView("endtoEndPage");
 	}
 	
 	@RequestMapping("/projectManagement")
-	public ModelAndView projectManagement(){	
-		
+	public ModelAndView projectManagement(){			
 		return new ModelAndView("projectManagementPage");
 	}
 	
