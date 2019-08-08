@@ -20,20 +20,17 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+	public ModelAndView testing(){			
 		return new ModelAndView("testingPage");
 	}
 	
 	@RequestMapping("/endToEnd")
-	public ModelAndView endToEnd(){	
-		
+	public ModelAndView endToEnd(){			
 		return new ModelAndView("endtoEndPage");
 	}
 	
 	@RequestMapping("/projectManagement")
-	public ModelAndView projectManagement(){
-		
+	public ModelAndView projectManagement(){		
 		return new ModelAndView("projectManagementPage");
 	}
 	
