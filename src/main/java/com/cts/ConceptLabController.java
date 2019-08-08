@@ -21,7 +21,8 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){			
+	public ModelAndView testing(){	
+		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
 		return new ModelAndView("testingPage");
 	}
 	
