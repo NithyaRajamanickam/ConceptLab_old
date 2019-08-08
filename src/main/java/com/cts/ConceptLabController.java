@@ -31,7 +31,7 @@ public class ConceptLabController {
 	
 	@RequestMapping("/projectManagement")
 	public ModelAndView projectManagement(){	
-		System.out.println(String.format("The value of my integer is %d", "Hello World"));  // Noncompliant; an 'int' is expected rather than a String)
+		System.out.println(String.format("The value of my integer is %d", "Hello World "));  // Noncompliant; an 'int' is expected rather than a String)
 		return new ModelAndView("projectManagementPage");
 	}
 	
