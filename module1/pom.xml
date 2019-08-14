@@ -7,10 +7,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>SpringMVC Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <modules>
-		<module>module1</module>
-		<module>module2</module>
-	</modules>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
