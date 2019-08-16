@@ -10,7 +10,7 @@ public class ConceptLabController {
 
 	@RequestMapping("/requirement")
 	public ModelAndView requirement(){	
-		/*int param = 1;
+		int param = 1;
 		if (param == 1)
 		 System.out.println("foo");
 		else if (param == 2)
@@ -18,7 +18,7 @@ public class ConceptLabController {
 		else if (param == 1) 
 		{// Noncompliant
 		  System.out.println("foo");
-		}*/
+		}
 		return new ModelAndView("requirementPage");
 	}	
 	
@@ -29,14 +29,7 @@ public class ConceptLabController {
 	}
 	
 	@RequestMapping("/testing")
-	public ModelAndView testing(){
-		/*String firstName = "firstName";   //String overrides equals
-		String lastName = "lastName";
-
-		if (firstName == lastName)
-		{
-			 System.out.println("foo");
-		}*/
+	public ModelAndView testing(){		
 		return new ModelAndView("testingPage");
 	}
 	
